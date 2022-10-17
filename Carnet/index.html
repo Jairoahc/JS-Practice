@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Quiz JS</title>
+</head>
+<body class="area">
+
+    <section>
+        <div class="mb-5">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+                </style>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand ms-4 title" href="#">QUIZ-JS</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link active mx-3 barranav" href= "./index.html?#">Carnet</a>
+                      <a class="nav-link active mx-3 barranav" href="../Calculadorab/calculadorab.html?operacion=%2B#">Calculadora básica</a>
+                      <a class="nav-link active mx-3 barranav" href="../Calculadora-av/calculadora-av.html">Calculadora Avanzada</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        
+        <!--Generación de carnet - se debe construir un algoritmo capaz de capturar los datos de una persona Nombres, 
+        Apellidos, Edad, Cargo, RH, numero de documento y teléfono-->
+        <div class="d-flex justify-content-center">
+            <div class="w-50 p-5 m-5 border border-opacity-75 bg-light rounded">
+                <div>
+                    <h3 class="text-center title2" id="titleOtro"> ¡Bienvenido, proporcionanos los datos y genera tu carnet!</h3>
+                </div>
+                <div class="my-5 ">
+                    <form class="w-100">
+                        <div class="mb-3 w-75 m-auto">
+                          <label for="Nombres" class="form-label">Nombres</label>
+                          <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3 w-75 m-auto">
+                          <label for="Apellidos" class="form-label">Apellidos</label>
+                          <input type="text" class="form-control" id="apellido">
+                        </div>
+                        <div class="mb-3 w-75 m-auto">
+                            <label for="Edad" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="edad">
+                          </div>
+                          <div class="mb-3 w-75 m-auto">
+                            <label for="Cargo" class="form-label">Cargo</label>
+                            <input type="text" class="form-control" id="cargo">
+                          </div>
+                          <div class="mb-3 w-75 m-auto">
+                            <label for="Numero de documento" class="form-label">Numero de documento</label>
+                            <input type="number" class="form-control" id="numeroDocumento">
+                          </div>
+                          <div class="mb-3 w-75 m-auto">
+                            <label for="Telefono" class="form-label">Telefono</label>
+                            <input type="number" class="form-control" id="telefono">
+                          </div>
+                          <div class="mb-3 w-75 m-auto">
+                            <label for="Tipo de RH" class="form-label">Tipo de RH</label>
+                            <input type="text" class="form-control" id="RH">
+                        </div>
+                      </div>
+                        <div class="d-flex justify-content-center">
+                            <button onclick="carnet()" type="submit" class="btn btn-primary mt-3">Generar Carnet</button>
+
+                        </div>
+
+                      </form>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <!--Generacion de carnet-->
+        <div class="d-flex justify-content-center">
+            <div class="w-25 p-5 m-5 border border-opacity-75 bg-dark text-light rounded">
+                <div>
+                    <h3 class="title2 text-center mb-4"> ¡Tu Carnet!</h3>
+                </div>
+                <div class="w-50 mb-5  rounded m-auto" id="img1">
+                    
+                </div>
+                <div class="title3">
+                    <h5 id="nombrec"> <!-- Nombres: Jairo Andres --></h5>
+                    <h5 id="apellidoc"> <!-- Apellidos: Hernandez Chacin --></h5>
+                    <h5 id="edadc"><!-- Edad: 23 --></h5>
+                    <h5 id="cargoc"><!-- Cargo: Gerente --></h5>
+                    <h5 id="idc"><!-- ID: 670849 --></h5>
+                    <h5 id="telefonoc"><!-- Telf: --></h5>
+                    <h5 id="RHC"><!-- RH: O+ --></h5>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!--     <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+</ul> -->
+    
+
+
+    <script src="./scripts.js"></script>
+    <script src="../bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

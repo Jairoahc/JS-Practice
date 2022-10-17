@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Quiz JS</title>
+</head>
+<body class="area">
+    <section>
+        <div class="mb-5">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+                </style>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand ms-4 title" href="#">QUIZ-JS</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link active mx-3 barranav" href="../Carnet/index.html?#">Carnet</a>
+                      <a class="nav-link active mx-3 barranav" href="./calculadorab.html?operacion=%2B#">Calculadora básica</a>
+                      <a class="nav-link active mx-3 barranav"href="../Calculadora-av/calculadora-av.html">Calculadora Avanzada</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        
+        <!--Calculadora ~ Se debe construir una calculadora que sea capaz de hacer las 4 operaciones básicas usando como entrada 2 numeros-->
+        <div class="d-flex justify-content-center">
+            <div class="w-50 p-5 m-5 border border-opacity-75 bg-light rounded">
+                <div>
+                    <h3 class="text-center title2" id="titleOtro2"> ¡Calcula!</h3>
+                </div>
+                <div class="my-5 ">
+                    <form class="w-100">
+                        <div class="mb-3 w-75 m-auto">
+                          <label for="oper" class="form-label">Selecciona el tipo de operacion a realizar:</label>
+                          <select class="mb-3 w-100 m-auto" name="operacion" id="oper">
+                            <option id="oper"  value="----">----</option>
+                            <option id="oper" value= "+" >Suma (+)</option>
+                            <option id="oper"  value= - >Resta (-)</option>
+                            <option id="oper"  value= * >Multiplicacion (X)</option>
+                            <option id="oper"  value= / >Division(÷)</option>
+                          </select>
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3 w-75 m-auto">
+                          <label for="primervalor" class="form-label">Primer Valor:</label>
+                          <input type="number" class="form-control" id="primervalor">
+                        </div>
+                        <div class="mb-3 w-75 m-auto">
+                            <label for="segundovalor" class="form-label">Segundo valor</label>
+                            <input type="number" class="form-control" id="segundovalor">
+                          </div>
+                        <div class="d-flex justify-content-center">
+                            <button onclick="calculadora()" type="submit" class="btn btn-primary mt-3 mx-3"> Obtener resultado </button>
+                            <button type="reset" class="btn btn-primary mt-3 mx-3"> Resetear</button>
+
+                        </div>
+
+                      </form>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <!--Generacion de resultado-->
+        <div class="d-flex justify-content-center">
+          <div class="w-25 p-5 m-5 border border-opacity-75 bg-dark text-light rounded">
+              <div>
+                  <h1 class="title2 text-center mb-4" id="resultadoGeneral"></h1>
+              </div>
+          </div>
+      </div>
+
+
+    </section>
+
+<!--     <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+</ul> -->
+    
+
+
+    <script src="./scripts2.js"></script>
+    <script src="../bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
